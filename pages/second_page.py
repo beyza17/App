@@ -26,8 +26,7 @@ def main():
     
         if text_input:
             st.write("You entered: ", text_input)
-            if st.button('Process'):
-                col_2.write(text_input)
+            st.write('Write short documentation here')
 
 if __name__ == "__main__":
     main()
