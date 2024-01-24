@@ -6,7 +6,7 @@ if __name__=="__main__":
             f"""
             <style>
             .stApp {{
-                background-image: url("https://media.giphy.com/media/cj2PFrOzMppR60dZKT/giphy.gif");
+                background-image: url("https://media.giphy.com/media/xUA7biF7n8LcAqh4bK/giphy.gif");
                 background-attachment: fixed;
                 background-size: cover
             }}
