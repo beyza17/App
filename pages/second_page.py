@@ -7,24 +7,12 @@ def main():
     st.markdown("<h2 style='text-align: center; color: violet;'>Report Generation!</h2>", unsafe_allow_html=True)
     
     # Store the initial value of widgets in session state
-if "visibility" not in st.session_state:
-    st.session_state.visibility = "visible"
-    st.session_state.disabled = False
+
 
 col1, col2 = st.columns(2)
 
 with col1:
-    st.checkbox("Disable text input widget", key="disabled")
-    st.radio(
-        "Set text input label visibility 👉",
-        key="visibility",
-        options=["visible", "hidden", "collapsed"],
-    )
-    st.text_input(
-        "Placeholder for the other text input widget",
-        "This is a placeholder",
-        key="placeholder",
-    )
+    st.markdown("[![Foo](https://media.giphy.com/media/RqxdeXRrOiGic/giphy.gif)")
 
 with col2:
     text_input = st.text_input(
