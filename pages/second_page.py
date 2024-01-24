@@ -14,17 +14,7 @@ def main():
     col1, col2 = st.columns(2)
     
     with col1:
-        st.checkbox("Disable text input widget", key="disabled")
-        st.radio(
-            "Set text input label visibility 👉",
-            key="visibility",
-            options=["visible", "hidden", "collapsed"],
-        )
-        st.text_input(
-            "Placeholder for the other text input widget",
-            "This is a placeholder",
-            key="placeholder",
-        )
+        st.markdown("[![Foo](https://media.giphy.com/media/RqxdeXRrOiGic/giphy.gif)")
     
     with col2:
         text_input = st.text_input(
