@@ -7,13 +7,14 @@ def main():
     st.markdown("<h2 style='text-align: center; color: violet;'>Report Generation!</h2>", unsafe_allow_html=True)
     
     # Store the initial value of widgets in session state
+    
 
-
+    
     col1, col2 = st.columns(2)
-
+    
     with col1:
         st.markdown("[![Foo](https://media.giphy.com/media/RqxdeXRrOiGic/giphy.gif)")
-
+    
     with col2:
         text_input = st.text_input(
             "Enter some text 👇",
@@ -21,9 +22,11 @@ def main():
             disabled=st.session_state.disabled,
             placeholder=st.session_state.placeholder,
         )
-
+    
         if text_input:
             st.write("You entered: ", text_input)
+
+    
    
 
 
