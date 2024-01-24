@@ -23,7 +23,8 @@ def main():
             disabled=st.session_state.disabled,
             placeholder=st.session_state.placeholder,
         )
-    
+        if text_input:
+        st.write("You entered: ", text_input)
         
 
 if __name__ == "__main__":
