@@ -1,39 +1,34 @@
 import streamlit as st
 
-def display_chat(chat_messages):
-    # Display chat messages
-    for sender, message in chat_messages:
-        a = ":smiley:"
-        if sender == 'user':
-            # Apply CSS styling for user response
-            st.write(
-                f'<div style="display:flex; align-items:center; flex-direction:row-reverse;">'
-                f'<div style="margin-right: 10px;">'
-                f'👤'  # User emoji
-                f'</div>'
-                f'<div style="background-color:#25D366; padding:10px; border-radius:10px;">'
-                f'{message}'
-                f'</div>'
-                f'</div>',
-                unsafe_allow_html=True
-            )
-        else:
-            # Apply CSS styling for bot response
-            st.write(
-                f'<div style="display:flex; align-items:center;">'
-                f'<div style="margin-right: 10px;">'
-                f'🤖'  # Bot emoji
-                f'</div>'
-                f'<div style="background-color:#075E54; padding:10px; border-radius:10px;">'
-                f'{message}'
-                f'</div>'
-                f'</div>',
-                unsafe_allow_html=True
-            )
+def main():
+    ##st.markdown("<h2 style='text-align: center; color: blue;'>Smart Chest-Xray Analysis and Report Generation!</h2>", unsafe_allow_html=True)
+    """
+    Main function to run the application.
+    """
+    
+    # sidebar: used option_menu just for asthetics
+    with st.sidebar:
+        choice = option_menu("Main Menu", ["About", "Try out!"], 
+            icons=['house', 'fire'], menu_icon="cast", default_index=0,
+        styles={
+        "container": {"padding": "0!important", "background-color": "#262730"},
+        "icon": {"color": "white", "font-size": "25px"}, 
+        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#3739b5"},
+        "nav-link-selected": {"background-color": "#1f8ff6"},})  
 
-# Run the chat interface
-if __name__ == '__main__':
-    # Set Streamlit app title
-    st.title("MedIQ ChatBot")
+    # navigations 
+    if choice == "About":
+        st.image('utils/CI 1.png', use_column_width=True)
+        st.write('Write short documentation here')
+        docs() 
+ 
+    elif choice == "Try out!":
+        colored_header(
+        label="CHEST-INSIGHT: Smart Chest-Xray Analysis and Report Generation! ",
+        description="Use the tabs below to tryout our dedicated tools",
+        color_name="violet-70",)
+        features()
 
-    display_chat(st.session_state["chat_messages"])
+
+if __name__ == "__main__":
+    main()
