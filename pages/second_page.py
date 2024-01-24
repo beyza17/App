@@ -36,4 +36,4 @@ if __name__ == '__main__':
     # Set Streamlit app title
     st.title("MedIQ ChatBot")
 
-    chat_interface(st.display_chat["chat_messages"])
+    display_chat(st.session_state["chat_messages"])
