@@ -14,7 +14,7 @@ if __name__=="__main__":
             """,
             unsafe_allow_html=True
         )
-    st.title(":black[MedIQ ChatBot]")
+    st.title(":gray[MedIQ ChatBot]")
     st.subheader("Your Virtual Doctor's Appointment")
 
     # Introduction and description
