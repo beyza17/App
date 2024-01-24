@@ -6,7 +6,7 @@ if __name__=="__main__":
             f"""
             <style>
             .stApp {{
-                background-image: url("https://media.giphy.com/media/xUA7biF7n8LcAqh4bK/giphy.gif");
+                background-image: url("https://media.giphy.com/media/1YBjlPx4dmZ2uSqYiH/giphy.gif");
                 background-attachment: fixed;
                 background-size: cover
             }}
@@ -14,7 +14,7 @@ if __name__=="__main__":
             """,
             unsafe_allow_html=True
         )
-    st.title(":#000000[MedIQ ChatBot]")
+    st.title(":MedIQ ChatBot")
     st.subheader("Your Virtual Doctor's Appointment")
 
     # Introduction and description
