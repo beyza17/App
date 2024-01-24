@@ -26,7 +26,7 @@ def main():
     
         if text_input:
             st.write("You entered: ", text_input)
-
+            if st.button('Process'):
 
 if __name__ == "__main__":
     main()
