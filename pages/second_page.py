@@ -7,10 +7,9 @@ def main():
     st.markdown("<h2 style='text-align: center; color: violet;'>Report Generation!</h2>", unsafe_allow_html=True)
     
     col1, col2 = st.columns(2)
-    image_file = st.file_uploader("Upload the image", type=['jpg', 'png', 'jpeg'])
-    if image_file is not None:
-        img = plt.imread(image_file)
-        col1.image(image_file, caption='Uploaded Image', use_column_width=True)
+    with col1:
+    st.markdown("[![Foo](https://media.giphy.com/media/1YBjlPx4dmZ2uSqYiH/giphy.gif)")
+                
     with col2:
     text_input = st.text_input(
         "Enter some text 👇",
