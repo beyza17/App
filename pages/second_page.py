@@ -39,7 +39,7 @@ def main():
             st.write("You entered: ", (' '.join(a_lemmas)))
             # Generate list of tokens and pos tags
             pos = [(token.text, token.pos_) for token in doc]
-             st.write("You entered: ", pos)
+            st.write("You entered: ", pos)
             
         
 
