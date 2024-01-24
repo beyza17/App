@@ -18,7 +18,7 @@ def main():
 
     # navigations 
     if choice == "About":
-        st.image('utils/CI 1.png', use_column_width=True)
+       
         st.write('Write short documentation here')
         docs() 
  
