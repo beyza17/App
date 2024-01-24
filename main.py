@@ -6,7 +6,7 @@ if __name__=="__main__":
             f"""
             <style>
             .stApp {{
-                background-image: url("https://github.com/Hmittal15/NewYork-taxi-fare-prediction/assets/108916132/a929dbe4-597d-474b-87c7-7758d1e12044");
+                background-image: url("https://media.giphy.com/media/cj2PFrOzMppR60dZKT/giphy.gif");
                 background-attachment: fixed;
                 background-size: cover
             }}
