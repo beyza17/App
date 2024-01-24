@@ -10,7 +10,7 @@ def main():
     
     # sidebar: used option_menu just for asthetics
     with st.sidebar:
-        choice = option_menu("Main Menu", ["Try out!"], 
+        choice = option_menu("main", ["second_page"], 
             icons=['house', 'fire'], menu_icon="cast", default_index=0,
         styles={
         "container": {"padding": "0!important", "background-color": "#262730"},
