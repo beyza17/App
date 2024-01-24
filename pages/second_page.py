@@ -10,7 +10,7 @@ def main():
     
     # sidebar: used option_menu just for asthetics
     with st.sidebar:
-        choice = option_menu("Main Menu", ["About", "Try out!"], 
+        choice = option_menu("Main Menu", ["Try out!"], 
             icons=['house', 'fire'], menu_icon="cast", default_index=0,
         styles={
         "container": {"padding": "0!important", "background-color": "#262730"},
@@ -19,17 +19,15 @@ def main():
         "nav-link-selected": {"background-color": "#1f8ff6"},})  
 
     # navigations 
-    if choice == "About":
-       
-        st.write('Write short documentation here')
-        docs() 
- 
-    elif choice == "Try out!":
+    if choice == "Try out!":
         colored_header(
         label="CHEST-INSIGHT: Smart Chest-Xray Analysis and Report Generation! ",
         description="Use the tabs below to tryout our dedicated tools",
         color_name="violet-70",)
         features()
+ 
+ 
+        
 
 
 if __name__ == "__main__":
