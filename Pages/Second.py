@@ -29,4 +29,9 @@ def display_chat(chat_messages):
                 f'</div>',
                 unsafe_allow_html=True
             )
+# Run the chat interface
+if __name__ == '__main__':
+    # Set Streamlit app title
+    st.title("MedIQ ChatBot")
 
+    chat_interface(st.session_state["chat_messages"])
