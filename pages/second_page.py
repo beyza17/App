@@ -1,6 +1,6 @@
 import streamlit as st
-pip install -U pip setuptools wheel
-pip install spacy
+import spacy
+import en_core_web_sm
 
 def main():
     # open colour image
