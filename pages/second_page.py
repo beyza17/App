@@ -1,5 +1,6 @@
 import streamlit as st
-import spacy=="3.7.2"
+pip install -U pip setuptools wheel
+pip install spacy
 
 def main():
     # open colour image
