@@ -1,5 +1,5 @@
 import streamlit as st
-import spacy==2.3.7
+from .about import __version__  # noqa: F401
 
 def main():
     # open colour image
