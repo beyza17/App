@@ -1,5 +1,5 @@
 import streamlit as st
-import spacy="3.7.2"
+import spacy=="3.7.2"
 
 def main():
     # open colour image
